@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ecore:EPackage xmi:version="2.0"
+    xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" name="clustercontrolmodel"
+    nsURI="http://clustercontrolmodel/1.0" nsPrefix="clustercontrolmodel">
+  <eClassifiers xsi:type="ecore:EClass" name="ClusterControl"/>
+  <eClassifiers xsi:type="ecore:EClass" name="Cluster">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="EAttribute0"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Cluster" eSuperTypes="#//CassandraCluster #//ZooKeeperCluster #//YCSBCluster">
+    <eOperations name="parseProperties" eType="#//Properties"/>
+    <eOperations name="parseNodes" eType="#//NodeList"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="name" eType="#//String"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="properties" eType="#//Properties"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="nodes" eType="#//NodeList"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EDataType" name="NodeList"/>
+  <eClassifiers xsi:type="ecore:EDataType" name="String"/>
+  <eClassifiers xsi:type="ecore:EDataType" name="Properties"/>
+  <eClassifiers xsi:type="ecore:EClass" name="CassandraCluster"/>
+  <eClassifiers xsi:type="ecore:EClass" name="ZooKeeperCluster"/>
+  <eClassifiers xsi:type="ecore:EClass" name="YCSBCluster"/>
+</ecore:EPackage>
