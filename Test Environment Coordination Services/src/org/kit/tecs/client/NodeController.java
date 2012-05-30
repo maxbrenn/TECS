@@ -15,14 +15,14 @@ import java.util.regex.Pattern;
 import org.apache.zookeeper.KeeperException;
 import org.kit.tecs.zookeeper.ZooKeeperConnector;
 
-public class NodeClient {
+public class NodeController {
 
 	protected Properties coordinationProperties;
 	protected Properties nodeClientProperties;
 	protected ZooKeeperConnector zookeeperConnector;
 	protected InetAddress localhostAddress;
 
-	public NodeClient() {
+	public NodeController() {
 		
 		coordinationProperties = parseProperties("conf/coordination.properties");
 		

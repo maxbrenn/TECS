@@ -1,13 +1,13 @@
 package org.kit.tecs.test;
 
-import org.kit.tecs.client.NodeClient;
+import org.kit.tecs.client.NodeController;
 
 public class NodeClientTest {
 
 	
 	public static void main(String[] args) {
 
-		 NodeClient nodeClient = new NodeClient();
+		 NodeController nodeClient = new NodeController();
 
 	
 		 
